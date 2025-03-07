@@ -1,0 +1,11 @@
+**Sqrt(x)**
+LINK:https://leetcode.com/problems/sqrtx/submissions/1566049798/?envType=study-plan-v2&envId=top-interview-150
+
+SOLUTION:
+         class Solution {
+    public int mySqrt(int x) {
+            double squareRoot = Math.sqrt(x);
+            System.out.println(squareRoot);
+            return (int) squareRoot;
+    }
+}
