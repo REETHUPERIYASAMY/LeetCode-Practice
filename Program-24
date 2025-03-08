@@ -1,0 +1,11 @@
+**Pow(x, n)**
+LINK:https://leetcode.com/problems/powx-n/description/?envType=study-plan-v2&envId=top-interview-150
+
+SOLUTION:
+         class Solution {
+    public double myPow(double x, int n) {
+        double power=Math.pow(x,n);
+        return power;
+    }
+    
+}
