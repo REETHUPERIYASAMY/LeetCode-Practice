@@ -1,0 +1,23 @@
+**Contains Duplicate II**
+LINK:https://leetcode.com/problems/contains-duplicate-ii/description/?envType=study-plan-v2&envId=top-interview-150
+
+SOLUTION:
+          class Solution {
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+        Set<Integer> seen = new HashSet<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            if (i > k) {
+                seen.remove(nums[i - k - 1]);
+            }
+
+            if (seen.contains(nums[i])) {
+                return true;
+            }
+
+            seen.add(nums[i]);
+        }
+
+        return false;        
+    }
+}
