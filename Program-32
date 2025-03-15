@@ -1,0 +1,15 @@
+**Single Number II**
+LINK:https://leetcode.com/problems/single-number-ii/description/?envType=study-plan-v2&envId=top-interview-150
+
+SOLUTION:
+        class Solution {
+    public int singleNumber(int[] nums) {
+        int ones=0, twos=0;
+        for(int num:nums){
+            ones=(ones^num)& ~twos;
+            twos=(twos^num)& ~ones;
+        }
+        return ones;
+    }
+    
+}
